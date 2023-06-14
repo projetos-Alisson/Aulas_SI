@@ -11,16 +11,19 @@
 <body>
 
     <h1>Criptografia: CIFRA DE CÉZAR</h1>
-    <form class="bg">
+    <div class="bg" name="form">
         <label>Mensagem</label>
       <input id="mensagem" type="text"><br>
+
+      <label>Mensagem Criptografa</label>
+      <input id="mensagemCriptografada" type="text"><br>
        
          <label>Resultado</label>
-        <input type="text"  id="encrypted">
+        <input type="text"  id="encrypted" name="decrypted">
 
-         <input onclick="encryptMensagem()"  type="submit" value="Enviar"><br><br>
+         <input onclick="encryptMensagem(); decryptMensagem()" type="submit" value="Enviar"><br><br>
           
-    </form>
+    <div>
     
 </body>
 </html>
